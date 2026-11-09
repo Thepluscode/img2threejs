@@ -3,6 +3,21 @@ name: img2threejs
 description: Turn an object or character reference image into a quality-gated, animation-ready procedural Three.js model built in code. Use for image-to-3D reconstruction, detail-accurate object rebuilds, stylized/likeness-maximized human characters, sculpt specs, and staged code generation.
 license: Apache-2.0
 version: 2.0.0
+metadata:
+  last_reviewed: "2026-11-09"
+  mode: "WRITE"
+  forbidden:
+    - "never continue past a forge/next.py hard stop (exit 3 or status=stopped), and never rebuild progress from chat history instead of .img2threejs/state.json"
+    - "never record continue on a passing global score while a hard, critical-feature, off-axis or material gate has failed"
+    - "never substitute a generic template, downloaded mesh or neural image-to-mesh output for the procedural TypeScript factory"
+    - "never install a plugin or dependency; name the img2 add command and stop"
+    - "never present hidden sides or stylized output as exact; report per-region confidence"
+  evidence: "every pass decision cites its render screenshot, comparison sheet, deterministic gate outputs and the review recorded in the spec"
+  escalate_when: "next.py reports a hard stop, a required domain plugin is unavailable, or the image cannot reach the requested fidelity"
+  termination:
+    - "stop at 3 corrections per pass or 6 in total (the state file's defaults) and report what still fails"
+    - "stop after 1 request for more views when a single view cannot resolve an identity-defining feature"
+  verified_by: "none - forge/tests (python3 -m unittest discover -s forge/tests) is upstream's suite and has not been run here"
 ---
 
 # img2threejs — Image to procedural Three.js
